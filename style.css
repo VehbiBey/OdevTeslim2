@@ -1,11 +1,12 @@
 body {
     background: linear-gradient(to bottom right, #ffccff, #ccffff);
-    font-family: 'Comic Sans MS', cursive;
+    /*font-family: 'Comic Sans MS', cursive;*/
     text-align: center;
     padding: 20px;
     overflow-x: hidden;
     position: relative;
     margin: 0;
+    font-family: sans-serif;
   }
   
   .container {
