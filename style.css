@@ -1,0 +1,139 @@
+body {
+    background: linear-gradient(to bottom right, #ffccff, #ccffff);
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  h1 {
+    color: #ff3399;
+    margin-bottom: 10px;
+  }
+  
+  .gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  button {
+    background-color: #ff66cc;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #surprise-box {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    min-height: 40px;
+  }
+  
+  .birthday-message {
+    background-color: #fff0f5;
+    border: 2px dashed #ff66cc;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #660033;
+    text-align: left;
+  }
+  
+  .birthday-message h2 {
+    color: #cc0066;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes pop {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+      color: #ff3399;
+    }
+  }
+  
+  .animated-message {
+    font-size: 32px;
+    font-weight: bold;
+    color: #cc0066;
+    margin-top: 20px;
+    animation: pop 1s ease-in-out infinite alternate;
+  }
+  
+  .surprise-bg {
+    background: radial-gradient(circle, #ffe0f0, #ffccff, #ccffff);
+    transition: background 1s ease-in-out;
+  }
+  
+  .cat {
+    position: fixed;
+    font-size: 40px;
+    animation: moveCat 4s ease-in-out forwards;
+    z-index: 1000;
+  }
+  
+  @keyframes moveCat {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-300px) rotate(360deg) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  /* Responsive - Telefonlar için */
+  @media only screen and (max-width: 600px) {
+    .gallery img {
+      width: 100px;
+      margin: 5px;
+    }
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+    .animated-message {
+      font-size: 24px;
+    }
+    .cat {
+      font-size: 30px;
+    }
+    .birthday-message {
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+  
